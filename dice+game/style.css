@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    background-color: #393e46;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    background-color: azure;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 800px 800px;
+    grid-template-rows: 1fr 3fr 50px;
+    gap: 40px;
+}
+
+.header{
+    width: 100%;
+    grid-column: 1 / -1;
+    font-family: "Sixtyfour Convergence";
+    font-size: 100px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.footer{
+    grid-column: 1 / -1;
+    font-family: "Atma";
+    font-size: 30px;
+    color: #4ecca3;
+    font-weight: 600;
+    text-align: center;
+}
+
+.player-box h2{
+    font-family: "Atma";
+    color: #4ecca3;
+    font-size: 50px;
+    text-align: center;
+}
+
+.player-box img{
+    position: relative;
+    top: -20px;
+    left:35%;
+    transition: all 1s;
+}
+
+.header:hover{
+    letter-spacing: 10px;
+}
+
+.player-box img:hover{
+    transform: rotateY(360deg);
+}
